@@ -12,4 +12,8 @@ public class Randomizer {
         return ThreadLocalRandom.current().nextDouble(from, to);
     }
 
+    public static boolean getChance(int percent){
+        return getRandom(0,100) < percent;
+    }
+
 }
